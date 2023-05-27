@@ -4,7 +4,7 @@
 
 
 
-void CreateRandomArray(int[,] arr)
+void FillArray(int[,] arr)
 {
   for (int i = 0; i < arr.GetLength(0); i++)
     {
@@ -15,7 +15,7 @@ void CreateRandomArray(int[,] arr)
     }
 }
 
-void ShowArray(int[,] arr)
+void PrintArray(int[,] arr)
 {
   for (int i = 0; i < arr.GetLength(0); i++)
   {
@@ -27,7 +27,7 @@ void ShowArray(int[,] arr)
   }
 }
 
-void DescendingArrayNumbers(int[,] array)
+void DescendingArray(int[,] array)
 {
   for (int i = 0; i < array.GetLength(0); i++)
   {
@@ -50,9 +50,9 @@ const int numberOfLines = 5;
 const int numberOfColumns = 4;
 int[,] array = new int[numberOfLines, numberOfColumns];
 
-CreateRandomArray(array);
-ShowArray(array);
+FillArray(array);
+PrintArray(array);
 
 Console.WriteLine($"Отсортированный массив: ");
-DescendingArrayNumbers(array);
-ShowArray(array);
+DescendingArray(array);
+PrintArray(array);
